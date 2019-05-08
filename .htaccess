@@ -1,0 +1,9 @@
+Options -Indexes
+RewriteEngine On
+
+
+RewriteRule ^blog-view/2018/([0-9]+)/(.+) fullpost.php?id=$1 [L]
+
+
+RewriteRule ^bus-view/([0-9]+)/(.+)$ bus_view.php?id=$1 [L] 
+RewriteRule ^gallery/([0-9]+)/(.+)$ gallery.php?id=$1&name=$2 [L] 
